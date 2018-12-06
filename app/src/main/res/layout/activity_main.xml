@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/colorPrimaryDark">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="156dp"
+        android:layout_height="192dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_luana" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="250dp"
+        android:layout_height="202dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="8dp"
+            android:paddingTop="10dp"
+            android:text="Papel:"
+            android:textColor="@color/cor_txt"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="0dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="8dp"
+            android:paddingTop="10dp"
+            android:text="Papelão:"
+            android:textColor="@color/cor_txt"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView3"
+            app:layout_constraintStart_toStartOf="@+id/textView3"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <EditText
+            android:id="@+id/edt_Plastico"
+            android:layout_width="70dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintStart_toStartOf="@+id/edt_Papel"
+            app:layout_constraintTop_toBottomOf="@+id/edt_Papel" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:layout_marginTop="8dp"
+            android:paddingTop="10dp"
+            android:text="="
+            android:textColor="@color/cor_txt"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/txt_Aluminio"
+            app:layout_constraintTop_toBottomOf="@+id/txt_Aluminio"
+            tools:text="=" />
+
+        <EditText
+            android:id="@+id/edt_Papel"
+            android:layout_width="70dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintStart_toStartOf="@+id/edt_aluminio"
+            app:layout_constraintTop_toBottomOf="@+id/edt_aluminio" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:layout_marginTop="8dp"
+            android:paddingTop="10dp"
+            android:text="="
+            android:textColor="@color/cor_txt"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/textView6"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <Button
+            android:id="@+id/btn_Plastico"
+            android:layout_width="50dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/bg_botao"
+            android:text="OK"
+            app:layout_constraintStart_toStartOf="@+id/btn_Papel"
+            app:layout_constraintTop_toBottomOf="@+id/btn_Papel" />
+
+        <EditText
+            android:id="@+id/edt_Papelao"
+            android:layout_width="70dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintStart_toStartOf="@+id/edt_Plastico"
+            app:layout_constraintTop_toBottomOf="@+id/edt_Plastico" />
+
+        <TextView
+            android:id="@+id/txt_Aluminio"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:paddingTop="10dp"
+            android:text="="
+            android:textColor="@color/cor_txt"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/btn_Aluminio"
+            app:layout_constraintTop_toTopOf="@+id/btn_Aluminio" />
+
+        <EditText
+            android:id="@+id/edt_aluminio"
+            android:layout_width="70dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintStart_toEndOf="@+id/textView"
+            app:layout_constraintTop_toTopOf="@+id/textView" />
+
+        <Button
+            android:id="@+id/btn_Aluminio"
+            android:layout_width="50dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:background="@color/bg_botao"
+            android:text="OK"
+            app:layout_constraintStart_toEndOf="@+id/edt_aluminio"
+            app:layout_constraintTop_toTopOf="@+id/edt_aluminio" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:paddingTop="10dp"
+            android:text="Alumínio:"
+            android:textColor="@color/cor_txt"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="8dp"
+            android:paddingTop="10dp"
+            android:text="Plástico:"
+            android:textColor="@color/cor_txt"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView2"
+            app:layout_constraintStart_toStartOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <Button
+            android:id="@+id/btn_Papelao"
+            android:layout_width="50dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/bg_botao"
+            android:text="OK"
+            app:layout_constraintStart_toStartOf="@+id/btn_Plastico"
+            app:layout_constraintTop_toBottomOf="@+id/btn_Plastico" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:layout_marginTop="8dp"
+            android:paddingTop="10dp"
+            android:text="="
+            android:textColor="@color/cor_txt"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/textView7"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+        <Button
+            android:id="@+id/btn_Papel"
+            android:layout_width="50dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/bg_botao"
+            android:text="OK"
+            app:layout_constraintStart_toStartOf="@+id/btn_Aluminio"
+            app:layout_constraintTop_toBottomOf="@+id/btn_Aluminio" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>
